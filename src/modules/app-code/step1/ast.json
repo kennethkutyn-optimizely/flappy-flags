@@ -1,0 +1,100 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 84,
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "start": 15,
+      "end": 58,
+      "expression": {
+        "type": "AssignmentExpression",
+        "start": 15,
+        "end": 58,
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "start": 15,
+          "end": 21,
+          "name": "config"
+        },
+        "right": {
+          "type": "ObjectExpression",
+          "start": 24,
+          "end": 58,
+          "properties": [
+            {
+              "type": "Property",
+              "start": 28,
+              "end": 39,
+              "method": false,
+              "shorthand": false,
+              "computed": false,
+              "key": {
+                "type": "Identifier",
+                "start": 28,
+                "end": 33,
+                "name": "pipes"
+              },
+              "value": {
+                "type": "Literal",
+                "start": 35,
+                "end": 39,
+                "value": true,
+                "raw": "true"
+              },
+              "kind": "init"
+            },
+            {
+              "type": "Property",
+              "start": 43,
+              "end": 55,
+              "method": false,
+              "shorthand": false,
+              "computed": false,
+              "key": {
+                "type": "Identifier",
+                "start": 43,
+                "end": 50,
+                "name": "gravity"
+              },
+              "value": {
+                "type": "Literal",
+                "start": 52,
+                "end": 55,
+                "value": 9.8,
+                "raw": "9.8"
+              },
+              "kind": "init"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "start": 60,
+      "end": 83,
+      "expression": {
+        "type": "CallExpression",
+        "start": 60,
+        "end": 83,
+        "callee": {
+          "type": "Identifier",
+          "start": 60,
+          "end": 75,
+          "name": "startFlappyBird"
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "start": 76,
+            "end": 82,
+            "name": "config"
+          }
+        ]
+      }
+    }
+  ],
+  "sourceType": "module"
+}

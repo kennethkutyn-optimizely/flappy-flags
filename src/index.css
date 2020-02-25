@@ -1,0 +1,94 @@
+body {
+ margin: 0;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+/*
+.left-pane {
+  position: absolute;
+  transition: all .2s ease-in-out;
+}
+.right-pane {
+  position: absolute;
+  transition: all .2s ease-in-out;
+}
+
+.demo-step-1 .left-pane {
+  opacity: 0;
+  transform: translate(-50%,0);
+}
+.demo-step-1 .right-pane {
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.demo-step-2 .left-pane,
+.demo-step-3 .left-pane,
+.demo-step-4 .left-pane,
+.demo-step-5 .left-pane,
+.demo-step-6 .left-pane {
+  opacity: 1;
+  left: calc(50% - 175px);
+  transform: translate(-50%,0);
+}
+.demo-step-2 .right-pane,
+.demo-step-3 .right-pane,
+.demo-step-4 .right-pane,
+.demo-step-5 .right-pane,
+.demo-step-6 .right-pane {
+  left: calc(50% + 175px);
+  transform: translate(-50%,0);
+}
+
+.demo-step-4.demo-control-sets-2 .left-pane,
+.demo-step-5.demo-control-sets-2 .left-pane {
+  opacity: 1;
+  left: calc(50% - 360px);
+  transform: translate(-50%,0);
+}
+.demo-step-4.demo-control-sets-2 .right-pane,
+.demo-step-5.demo-control-sets-2 .right-pane {
+  left: calc(50% + 190px);
+  transform: translate(-50%,0);
+}
+
+.demo-step-6.demo-control-sets-2 .left-pane {
+  opacity: 1;
+  left: calc(50% - 360px);
+  transform: translate(-50%,0);
+}
+.demo-step-6.demo-control-sets-2 .right-pane {
+  left: calc(50% + 200px);
+  transform: translate(-50%,0);
+}*/
+
+.instruction-enter {
+  opacity: 0.01;
+  margin-top: 100px;
+}
+
+.instruction-enter.instruction-enter-active {
+  opacity: 1;
+  margin-top: 0px;
+  transition: 700ms;
+}
+
+.instruction-leave {
+  opacity: 1;
+  margin-top: 0px;
+}
+
+.instruction-leave.instruction-leave-active {
+  opacity: 0.01;
+  margin-top: -100px;
+  transition: 700ms;
+}

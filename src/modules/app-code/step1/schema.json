@@ -1,0 +1,389 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "start": {
+      "type": "integer"
+    },
+    "end": {
+      "type": "integer"
+    },
+    "body": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "start": {
+              "type": "integer"
+            },
+            "end": {
+              "type": "integer"
+            },
+            "expression": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "operator": {
+                  "type": "string"
+                },
+                "left": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "integer"
+                    },
+                    "end": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "start",
+                    "end",
+                    "name"
+                  ]
+                },
+                "right": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "integer"
+                    },
+                    "end": {
+                      "type": "integer"
+                    },
+                    "properties": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "start": {
+                              "type": "integer"
+                            },
+                            "end": {
+                              "type": "integer"
+                            },
+                            "method": {
+                              "type": "boolean"
+                            },
+                            "shorthand": {
+                              "type": "boolean"
+                            },
+                            "computed": {
+                              "type": "boolean"
+                            },
+                            "key": {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "string"
+                                },
+                                "start": {
+                                  "type": "integer"
+                                },
+                                "end": {
+                                  "type": "integer"
+                                },
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "start",
+                                "end",
+                                "name"
+                              ]
+                            },
+                            "value": {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "string"
+                                },
+                                "start": {
+                                  "type": "integer"
+                                },
+                                "end": {
+                                  "type": "integer"
+                                },
+                                "value": {
+                                  "type": "boolean"
+                                },
+                                "raw": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "start",
+                                "end",
+                                "value",
+                                "raw"
+                              ]
+                            },
+                            "kind": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "start",
+                            "end",
+                            "method",
+                            "shorthand",
+                            "computed",
+                            "key",
+                            "value",
+                            "kind"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "start": {
+                              "type": "integer"
+                            },
+                            "end": {
+                              "type": "integer"
+                            },
+                            "method": {
+                              "type": "boolean"
+                            },
+                            "shorthand": {
+                              "type": "boolean"
+                            },
+                            "computed": {
+                              "type": "boolean"
+                            },
+                            "key": {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "string"
+                                },
+                                "start": {
+                                  "type": "integer"
+                                },
+                                "end": {
+                                  "type": "integer"
+                                },
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "start",
+                                "end",
+                                "name"
+                              ]
+                            },
+                            "value": {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "string"
+                                },
+                                "start": {
+                                  "type": "integer"
+                                },
+                                "end": {
+                                  "type": "integer"
+                                },
+                                "value": {
+                                  "type": "number"
+                                },
+                                "raw": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "start",
+                                "end",
+                                "value",
+                                "raw"
+                              ]
+                            },
+                            "kind": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "start",
+                            "end",
+                            "method",
+                            "shorthand",
+                            "computed",
+                            "key",
+                            "value",
+                            "kind"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "start",
+                    "end",
+                    "properties"
+                  ]
+                }
+              },
+              "required": [
+                "type",
+                "start",
+                "end",
+                "operator",
+                "left",
+                "right"
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "start",
+            "end",
+            "expression"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "start": {
+              "type": "integer"
+            },
+            "end": {
+              "type": "integer"
+            },
+            "expression": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "callee": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "start": {
+                      "type": "integer"
+                    },
+                    "end": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "start",
+                    "end",
+                    "name"
+                  ]
+                },
+                "arguments": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "start": {
+                          "type": "integer"
+                        },
+                        "end": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "start",
+                        "end",
+                        "name"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "type",
+                "start",
+                "end",
+                "callee",
+                "arguments"
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "start",
+            "end",
+            "expression"
+          ]
+        }
+      ]
+    },
+    "sourceType": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "type",
+    "start",
+    "end",
+    "body",
+    "sourceType"
+  ]
+}

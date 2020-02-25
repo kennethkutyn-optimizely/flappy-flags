@@ -1,0 +1,156 @@
+html, body {
+  user-select: none;
+  background: none transparent;
+}
+
+
+.CodeMirror {
+  position: static !important;
+  height: 525px !important;
+}
+
+.cm-comment {
+  color: #a6adba !important;
+}
+
+.your-app-code {
+  width: 550px;
+  font-size: 15px;
+  margin: 32px 10px 10px 10px;
+  height: 525px;
+}
+
+
+.oui-tabs--dashboard .oui-tabs-nav__item:first-child {
+  margin-left: 0px;
+}
+
+#root {
+  height: 100%;
+}
+
+.mover {
+  animation: move 1 0.5s ease-out;
+}
+
+.pulsater {
+  animation: pulsate infinite 300ms linear;
+}
+
+.jiggler {
+  animation: jiggle 0.75s ease-in-out infinite alternate, fade-in 0.33s ease-in forwards;
+  opacity: 0;
+}
+
+.bouncer {
+  animation: bounce 0.75s ease-in-out infinite alternate, fade-in 0.33s ease-in forwards;
+  opacity: 0;
+}
+
+.fader {
+  animation: fade-in 5s ease-in 1 1 forwards;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #0037FF;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #0037FF;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #0037FF;
+}
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent; 
+  border-right: 7px solid #0037FF; 
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes jiggle {
+  0% {
+    transform: translate(0px,0);
+  }
+  100% {
+    transform: translate(-10px,0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0px,0);
+  }
+  100% {
+    transform: translate(0px,10px);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    color: #82B1FF;
+    font-weight: inherit;
+  }
+  50% {
+    color: #FFBF46;
+    font-weight: bolder;
+  }
+  100% {
+    color: #82B1FF;
+    font-weight: inherit;
+  }
+}
+
+@keyframes move {
+  from {
+    left: 0px;
+    opacity: 1.0;
+  }
+  to {
+    left: 100%;
+    opacity: 1.0;
+  }
+}
+
+.fade {
+  transition: opacity 0.5s ease-out 0s;
+}
+
+.slide {
+  transition: left 0.5s ease-out 0s, top 0.5s ease-out 0s;
+}
+
+@keyframes move {
+  from {
+    left: 0px;
+    opacity: 1.0;
+  }
+  to {
+    left: 100%;
+    opacity: 1.0;
+  }
+}
