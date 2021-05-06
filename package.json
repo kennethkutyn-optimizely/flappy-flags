@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "codemirror": "^5.49.2",
-    "highcharts": "^7.2.1",
+    "highcharts": "^9.0.0",
     "highcharts-react-official": "^2.2.2",
     "moment": "^2.24.0",
     "optimizely-oui": "^44.10.0",
