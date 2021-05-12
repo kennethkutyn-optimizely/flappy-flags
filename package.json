@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "codemirror": "^5.49.2",
+    "codemirror": "^5.58.2",
     "highcharts": "^7.2.1",
     "highcharts-react-official": "^2.2.2",
     "moment": "^2.24.0",
