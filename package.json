@@ -6,7 +6,7 @@
     "codemirror": "^5.49.2",
     "highcharts": "^7.2.1",
     "highcharts-react-official": "^2.2.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "optimizely-oui": "^44.10.0",
     "react": "^16.11.0",
     "react-addons-css-transition-group": "^15.6.2",
